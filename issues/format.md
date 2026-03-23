@@ -69,7 +69,7 @@ Optional assumptions, risks, references, or implementation details.
 
 Short, specific name of the task. It should identify the work without needing extra context.
 
-`ISSUE-ID` must use a zero-padded 5-digit format: `ISSUE-00001`, `ISSUE-00042`, `ISSUE-01357`.
+`ISSUE-ID` must use a zero-padded 5-digit format, and each new issue must use the next available ID in sequence, for example `ISSUE-00001`, `ISSUE-00002`, `ISSUE-00003`.
 
 ### `## Dates`
 
