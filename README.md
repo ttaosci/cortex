@@ -55,11 +55,9 @@ cortex/
 
 ## Operating Rules
 
-- Put durable knowledge in `cortex/docs/`, not in issue files.
-- Put execution state in `cortex/issues/`, not in docs.
-- Follow `cortex/issues/format.md` whenever creating or modifying an issue.
-- Follow `cortex/changelog/format.md` whenever creating or updating changelog content.
-- When work changes behavior, update both the relevant doc and the related issue.
-- When work is completed, update the changelog according to `cortex/changelog/format.md`.
-- When work finishes, move the issue from `cortex/issues/active/` to `cortex/issues/closed/`.
-- When a new task is identified but not started, create it in `cortex/issues/backlog/`.
+- Put durable knowledge in `cortex/docs/`.
+- Put execution state in `cortex/issues/`.
+- Put change history in `cortex/changelog/`.
+- Follow `cortex/workflow.md` for task handling and lifecycle rules.
+- Follow `cortex/issues/format.md` for issue format rules.
+- Follow `cortex/changelog/format.md` for changelog format rules.
