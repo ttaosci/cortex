@@ -29,6 +29,7 @@ Use `cortex/changelog/` to answer:
 
 ```text
 cortex/
+├── workflow.md
 ├── changelog/
 │   ├── entries/
 │   ├── CHANGE_INDEX.md
