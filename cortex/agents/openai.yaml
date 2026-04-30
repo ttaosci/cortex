@@ -1,0 +1,7 @@
+interface:
+  display_name: "cortex"
+  short_description: "cortex is the operational memory, issue-tracking system, and change history for this repository"
+  default_prompt: "Use $cortex to manage this work item from discovery through validation."
+
+policy:
+  allow_implicit_invocation: true

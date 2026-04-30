@@ -18,7 +18,7 @@ Summary:
 
 ## Fields
 
-- `Issue`: corresponding issue ID. Follow `cortex/issues/format.md` for the canonical issue format.
+- `Issue`: corresponding issue ID. Follow `references/issue_format.md` for the canonical issue format.
 - `Related Files`: docs, code, or other files related to the change
 - `Summary`: short factual bullets describing the change
 
@@ -34,8 +34,8 @@ Summary:
 
 ## Change Index Format
 
-`cortex/changelog/CHANGE_INDEX.md` is a compact index of changelog entries, not a place for full entry content.
-Full changelog entries should be stored under `cortex/changelog/entries/`.
+`$CORTEX_HOME/changelog/CHANGE_INDEX.md` is a compact index of changelog entries, not a place for full entry content.
+Full changelog entries should be stored under `$CORTEX_HOME/changelog/entries/`.
 
 Recommended structure:
 
@@ -59,20 +59,18 @@ Index rules:
 - Group entries by year.
 - Keep entries in reverse chronological order within each year.
 - Use one line per changelog entry.
-- Do not duplicate full summaries in `cortex/changelog/CHANGE_INDEX.md`.
-- Store entry files under `cortex/changelog/entries/`.
+- Do not duplicate full summaries in `$CORTEX_HOME/changelog/CHANGE_INDEX.md`.
+- Store entry files under `$CORTEX_HOME/changelog/entries/`.
 - Use filenames in the format `<ISSUE-ID>-short-title.md`.
-- The `Entry File` field should use the path relative to `cortex/changelog/`, for example `entries/<ISSUE-ID>-short-title.md`.
+- The `Entry File` field should use the path relative to `$CORTEX_HOME/changelog/`, for example `entries/<ISSUE-ID>-short-title.md`.
 
 ## Example
 
 ```md
-## YYYY-MM-DD - Title
-Issue: <ISSUE-ID>
+## 2021-05-21 - Adding README
+Issue: ISSUE-00001
 Related Files:
-- cortex/README.md
-- cortex/docs/README.md
-- cortex/issues/format.md
+- README.md
 Summary:
 - Added ...
 - Updated ...

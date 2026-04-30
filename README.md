@@ -1,63 +1,18 @@
 # Cortex
 
-`cortex/` is the operational memory, issue-tracking system, and change history for this repository.
+Cortex helps agents track project issues, tasks, and changes with minimal overhead.
 
-It is organized into three areas plus one workflow file:
+## Usage
+```bash
+git clone https://github.com/ttaosci/cortex.git
 
-- `cortex/docs/`: stable project knowledge
-- `cortex/issues/`: active work tracking
-- `cortex/changelog/`: change history
-- `cortex/workflow.md`: task-handling process
-
-Use `cortex/docs/` to answer:
-
-- what the system is
-- how it works
-- how to use it
-
-Use `cortex/issues/` to answer:
-
-- what needs to be done
-- what is being worked on
-- what has been finished
-
-Use `cortex/changelog/` to answer:
-
-- what changed over time
-
-## Layout
-
-```text
-cortex/
-├── workflow.md
-├── changelog/
-│   ├── entries/
-│   ├── CHANGE_INDEX.md
-│   └── README.md
-├── docs/
-│   ├── method/
-│   ├── usage/
-│   └── README.md
-└── issues/
-    ├── active/
-    ├── backlog/
-    ├── closed/
-    └── README.md
+# <skill_dir>
+# Codex: .agents/skills
+# Claude: .claude/skills
+mkdir -p <project_root>/<skill_dir>
+cp -r cortex/cortex <project_root>/<skill_dir>/cortex
+# Cortex stores project-local issues and change history here
+export CORTEX_HOME=<project_root>/cortex
+# In Codex or Claude Code
+> $cortex Write me a script that calculates tips.
 ```
-
-## Entry Points
-
-- Use `cortex/workflow.md` for the task lifecycle.
-- Use `cortex/issues/README.md` for issue folder meanings.
-- Use `cortex/issues/format.md` for the issue format and field rules.
-- Use `cortex/changelog/README.md` for changelog folder meaning.
-- Use `cortex/changelog/format.md` for the changelog format and index rules.
-
-## Operating Rules
-
-- Put durable knowledge in `cortex/docs/`.
-- Put execution state in `cortex/issues/`.
-- Put change history in `cortex/changelog/`.
-- Follow `cortex/workflow.md` for task handling and lifecycle rules.
-- Follow `cortex/issues/format.md` for issue format rules.
-- Follow `cortex/changelog/format.md` for changelog format rules.

@@ -4,8 +4,8 @@ Use this directory to record meaningful repository and workflow changes over tim
 
 ## Structure
 
-- `cortex/changelog/entries/`: full changelog entry files
-- `cortex/changelog/CHANGE_INDEX.md`: compact index of changelog entries
+- `$CORTEX_HOME/changelog/entries/`: full changelog entry files
+- `$CORTEX_HOME/changelog/CHANGE_INDEX.md`: compact index of changelog entries
 
 ## Purpose
 
@@ -17,4 +17,4 @@ Use changelog entries to record:
 
 ## Notes
 
-- Follow `cortex/changelog/format.md` for the canonical changelog format and index rules.
+- Follow `references/changelog_format.md` for the canonical changelog format and index rules.
